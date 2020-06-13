@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Dev Challenge</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="stomp.js"></script>
+    <script src="sparkline.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div id="app" class="app">
+                    <h4 class="text-center" id="headerText">List Of Prices</h4>
+                    <div id="loader">
+                        <div class="spinner-grow text-muted"></div>
+                        <div class="spinner-grow text-primary"></div>
+                        <div class="spinner-grow text-success"></div>
+                        <div class="spinner-grow text-info"></div>
+                        <div class="spinner-grow text-warning"></div>
+                        <div class="spinner-grow text-danger"></div>
+                        <div class="spinner-grow text-secondary"></div>
+                        <div class="spinner-grow text-dark"></div>
+                        <div class="spinner-grow text-light"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="info">
+                <ul>
+                    <li>
+                            I have created an app js file that init the application and subscribe to stomp client.
+                            App js also makes call to dataTable method to create data table.
+                    </li>
+                    <li>
+                        Created a data table module which takes table headers and row data and create the data table.
+                    </li>
+                    <li>
+                        A mid price module is responsible to calculate the mid price and draw the sparkline graph.
+                    </li>
+                    <li>
+                        Added Jasmine and set up the unit testing. I have added unit test for one module.
+                    </li>
+                    <li>
+                        If i would be allowed to use any library or framework, I would prefer react. Updating dom based
+                        on server response is very expensive and makes the page to not perform well. React Virtual dom and
+                        and it's dom updation feature can make this page to perform more better as we are doing dom updation on every
+                        response from stomp client.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Code you write in index.js and anything it depends on will be bundled into bundle.js and
+     is included here -->
+<script src="bundle.js"></script>
+
+</body>
+</html>
